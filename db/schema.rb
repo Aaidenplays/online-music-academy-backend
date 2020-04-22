@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_04_22_161016) do
   end
 
   create_table "instructors", force: :cascade do |t|
+    t.integer "resource_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
